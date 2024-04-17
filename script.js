@@ -38,15 +38,6 @@ function ADDtoweb() {
     clearallfields();
   }
 }
-
-// delete the data
-// document.querySelector("#student-list").addEventListener("click", (e) => {
-//   alert("I am an alert box!");
-//   target = e.target;
-//   if (target.classList.contains("delete")) {
-//     target.parentElement.parentElement.remove();
-//   }
-// });
 function delete_row(e) {
   e.parentNode.parentNode.parentNode.removeChild(e.parentNode.parentNode);
 }
@@ -62,10 +53,11 @@ function edit_row(e) {
     SelectedRow.children[2].textContent;
   document.getElementById("mySelect").value =
     SelectedRow.children[3].textContent;
+  SelectedRow == null;
 }
 function clearallfields() {
   document.querySelector("#InputName").value = "";
   document.querySelector("#InputEmail").value = "";
   document.querySelector("#numericInput").value = "";
-  document.querySelector("mySelect").value = "";
+  document.querySelector("#mySelect").value = "";
 }
