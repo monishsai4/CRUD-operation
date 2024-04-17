@@ -53,9 +53,8 @@ function delete_row(e) {
 }
 function edit_row(e) {
   alert("This is being edited");
-  target = e.target;
+  SelectedRow = e.parentNode.parentNode;
 
-  console.log("COndtion has started");
   // SelectedRow = target.parentElement.parentElement;
   document.getElementById("InputName").value =
     SelectedRow.children[0].textContent;
