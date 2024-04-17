@@ -34,7 +34,6 @@ function ADDtoweb() {
       SelectedRow.children[2].textContent = numericInput;
       SelectedRow.children[3].textContent = mySelect;
       SelectedRow == null;
-      alert("The infos are edited");
     }
     clearallfields();
   }
@@ -52,7 +51,6 @@ function delete_row(e) {
   e.parentNode.parentNode.parentNode.removeChild(e.parentNode.parentNode);
 }
 function edit_row(e) {
-  alert("This is being edited");
   SelectedRow = e.parentNode.parentNode;
 
   // SelectedRow = target.parentElement.parentElement;
